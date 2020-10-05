@@ -23,13 +23,12 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: ``, // This path is relative to the root of the site.
+        display: `minimal-ui`, // This path is relative to the root of the site.
       },
     },
-    `gatsby- plugin - postcss`,
+    `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby- plugin - sass`,
+      resolve: `gatsby-plugin-sass`,
       options: {
         postCssPlugins: [
           require("tailwindcss"),
