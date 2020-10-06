@@ -7,3 +7,17 @@
 body {
   font-family: "Alata", sans-serif;
 }
+
+.icons {
+  @apply text-gray-700;
+  @apply fill-current;
+  @apply w-8;
+  @apply h-8;
+  @apply transition-all;
+  @apply delay-300;
+  @apply ease-linear;
+
+  &:hover {
+    @apply text-black;
+  }
+}
