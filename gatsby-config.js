@@ -21,9 +21,11 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`, // This path is relative to the root of the site.
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
+        display: `minimal-ui`,
+        icon: `src/images/signature.png`,
+        // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
@@ -43,6 +45,15 @@ module.exports = {
           include: /icons/ // See below to configure properly
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `black`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
     },
   ],
 }
