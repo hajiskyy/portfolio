@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Gmail from "../icons/gmail.svg";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 function Contact() {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const sectionTrigger = useRef(null)
+
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: sectionTrigger.current,
+      onEnter: () => gsap.fromTo(sectionTrigger.current, {
+        y: 100,
+        opacity: 0,
+      },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 3
+        }
+      )
+    })
+  })
+
   return (
-    <div className="w-full py-24 md:flex md:items-center">
+    <section className="w-full py-24 md:flex md:items-center" ref={sectionTrigger}>
       <div className="md:w-1/2 md:pr-10">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">I'm currently available for part-time work.</h3>
         <p className="font-secondary tracking-wider leading-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -31,7 +54,7 @@ function Contact() {
 
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 

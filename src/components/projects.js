@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Chevrons from "../icons/chevrons-down.svg"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -7,6 +7,8 @@ import GatsbyLogo from "../icons/gatsby.svg"
 import Tailwind from "../icons/tailwindcss.svg"
 import Netlify from "../icons/netlify.svg"
 import Next from "../icons/next-dot-js.svg"
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -27,12 +29,31 @@ const Projects = () => {
       }
     }
   `)
+  gsap.registerPlugin(ScrollTrigger);
+
+  const sectionTrigger = useRef(null)
+
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: sectionTrigger.current,
+      onEnter: () => gsap.fromTo(sectionTrigger.current, {
+        y: 100,
+        opacity: 0,
+      },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 3
+        }
+      )
+    })
+  })
 
   return (
-    <div className="w-full">
+    <section className="w-full">
       <div className="w-full py-24">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">Some Projects</h3>
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center" ref={sectionTrigger}>
           <div className="w-full md:flex md:justify-between md:items-center mb-20">
             <div className="w-full md:w-1/2">
               <a href="https://ontracxpress.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
@@ -85,7 +106,7 @@ const Projects = () => {
         <div className="px-1 text-lg">Scroll</div>
         <Chevrons className="animate-bounce" />
       </div>
-    </div>
+    </section>
   )
 }
 
