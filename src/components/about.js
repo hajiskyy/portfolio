@@ -49,7 +49,7 @@ function About() {
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </div>
         <div className="mt-10 md:mt-0 md:w-1/2" ref={sectionTrigger}>
-          <h3 className="text-3xl font-semibold tracking-widest">About me</h3>
+          <h2 className="text-3xl font-semibold tracking-widest">About me</h2>
           <p className="font-secondary tracking-wider leading-normal my-5"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           <div className="flex">
             <a href="https://twitter.com/hajiskyy" target="_blank" rel="noreferrer">
