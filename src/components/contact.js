@@ -3,7 +3,7 @@ import Gmail from "../icons/gmail.svg";
 
 function Contact() {
   return (
-    <div className="w-full py-24 md:flex md:items-center">
+    <section className="w-full py-24 md:flex md:items-center">
       <div className="md:w-1/2 md:pr-10">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">I'm currently available for part-time work.</h3>
         <p className="font-secondary tracking-wider leading-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -15,6 +15,7 @@ function Contact() {
 
       <div className="md:w-1/2">
         <form name="contact" method="POST" data-netlify="true" className="mt-10">
+          <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name">
               <input className=" w-full outline-none border-b-2 py-2 border-gray-700 focus:border-black" type="text" name="name" id="name" placeholder="Name" aria-required required />
@@ -31,7 +32,7 @@ function Contact() {
 
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 
