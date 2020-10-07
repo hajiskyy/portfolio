@@ -18,12 +18,12 @@ function Landing() {
 
   return (
     <div className="w-full">
-      <div className="w-full py-48 lg:py-24 lg:flex lg:items-center lg:justify-between">
-        <div className="lg:w-1/2">
-          <h1 className="text-4xl lg:text-6xl font-bold tracking-wider">Hi, I'm Haji Mohammmed</h1>
+      <div className="w-full py-48 md:py-24 md:flex md:items-center md:justify-between">
+        <div className="md:w-1/2">
+          <h1 className="text-4xl lg:text-5xl font-bold tracking-wider">Hi, I'm Haji Mohammmed</h1>
           <p className="mt-10">Front End Developer, UI/UX Design</p>
         </div>
-        <div className="hidden lg:block" style={{ width: 400, height: 500 }}>
+        <div className="hidden md:block" style={{ width: 400, height: 500 }}>
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </div>
 

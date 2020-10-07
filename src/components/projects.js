@@ -33,13 +33,13 @@ const Projects = () => {
       <div className="w-full py-24">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">Some Projects</h3>
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="w-full lg:flex lg:justify-between lg:items-center mb-20">
-            <div className="w-full lg:w-1/2">
+          <div className="w-full md:flex md:justify-between md:items-center mb-20">
+            <div className="w-full md:w-1/2">
               <a href="https://ontracxpress.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
                 <Img fluid={data.thumbnail1.childImageSharp.fluid} className=" border-gray-700 border-2 rounded-lg" />
               </a>
             </div>
-            <div className="mt-10 lg:w-1/2 lg:mt-0 lg:ml-10">
+            <div className="mt-10 md:w-1/2 md:mt-0 md:ml-10">
               <a href="https://ontracxpress.netlify.app/" target="_blank" rel="noreferrer">
                 <h4 className="text-3xl hover:text-gray-700">Ontrac Xpress</h4>
               </a>
@@ -57,13 +57,13 @@ const Projects = () => {
 
           <hr></hr>
 
-          <div className="w-full lg:flex lg:justify-between lg:items-center mb-20 lg:mt-20">
-            <div className="w-full lg:w-1/2">
+          <div className="w-full md:flex md:justify-between md:items-center mb-20 md:mt-20">
+            <div className="w-full md:w-1/2">
               <a href="https://cooking-with-khalil.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
                 <Img fluid={data.thumbnail2.childImageSharp.fluid} className=" border-gray-700 border-2 rounded-lg" />
               </a>
             </div>
-            <div className="mt-10 lg:w-1/2 lg:mt-0 lg:ml-10">
+            <div className="mt-10 md:w-1/2 md:mt-0 md:ml-10">
               <a href="https://cooking-with-khalil.netlify.app/" target="_blank" rel="noreferrer">
                 <h4 className="text-3xl hover:text-gray-700">Cooking With Khalil</h4>
               </a>
