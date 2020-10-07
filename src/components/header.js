@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
         <div><Link className="hover:text-black" to="/#projects">Projects</Link></div>
         <div><Link className="hover:text-black" to="/#stack">Stack</Link></div>
         <div><Link className="hover:text-black" to="/#contact">Contact</Link></div>
-        <div><Link to="/"><Github className="text-gray-900 icons" /></Link></div>
+        <div><a href="https://github.com/hajiskyy" target="_blank" rel="noreferrer"><Github className="text-gray-900 icons" /></a></div>
       </div>
     </header>
   </>
