@@ -4,6 +4,10 @@
 
 @import "tailwindcss/utilities";
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Alata", sans-serif;
 }

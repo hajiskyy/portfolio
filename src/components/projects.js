@@ -50,7 +50,7 @@ const Projects = () => {
   })
 
   return (
-    <section className="w-full">
+    <section className="w-full" id="projects">
       <div className="w-full py-24">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">Some Projects</h3>
         <div className="w-full flex flex-col justify-center items-center" ref={sectionTrigger}>

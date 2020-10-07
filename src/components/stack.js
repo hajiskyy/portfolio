@@ -36,7 +36,7 @@ function Stack() {
   })
 
   return (
-    <section className="w-full">
+    <section className="w-full" id="stack">
       <div className="w-full py-40 lg:py-24">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">My Stack</h3>
         <table className="w-full table-fixed" ref={sectionTrigger}>
