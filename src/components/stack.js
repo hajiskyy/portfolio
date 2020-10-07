@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Chevrons from "../icons/chevrons-down.svg"
 import Html from "../icons/html5.svg"
 import Sass from "../icons/sass.svg"
@@ -10,13 +10,36 @@ import Next from "../icons/next-dot-js.svg"
 import Mongodb from "../icons/mongodb.svg"
 import Firebase from "../icons/firebase.svg"
 import Codersrank from "../icons/codersrank.svg"
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 function Stack() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const sectionTrigger = useRef(null)
+
+  useEffect(() => {
+
+    ScrollTrigger.create({
+      trigger: sectionTrigger.current,
+      onEnter: () => gsap.fromTo(sectionTrigger.current, {
+        y: 100,
+        opacity: 0,
+      },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 3
+        }
+      )
+    })
+  })
+
   return (
-    <div className="w-full">
+    <section className="w-full">
       <div className="w-full py-40 lg:py-24">
         <h3 className="text-3xl font-semibold tracking-widest mb-10">My Stack</h3>
-        <table className="w-full table-fixed">
+        <table className="w-full table-fixed" ref={sectionTrigger}>
           <tbody>
             <tr>
               <td className="w-1/3 border py-5">
@@ -63,7 +86,7 @@ function Stack() {
         <div className="px-1 text-lg">Scroll</div>
         <Chevrons className="animate-bounce" />
       </div>
-    </div>
+    </section>
   )
 }
 

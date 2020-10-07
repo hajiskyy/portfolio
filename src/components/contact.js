@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Gmail from "../icons/gmail.svg";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 function Contact() {
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const sectionTrigger = useRef(null)
+
+  useEffect(() => {
+    ScrollTrigger.create({
+      trigger: sectionTrigger.current,
+      onEnter: () => gsap.fromTo(sectionTrigger.current, {
+        y: 100,
+        opacity: 0,
+      },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 3
+        }
+      )
+    })
+  })
+
   return (
     <section className="w-full py-24 md:flex md:items-center">
       <div className="md:w-1/2 md:pr-10">
