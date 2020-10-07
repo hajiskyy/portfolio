@@ -9,15 +9,24 @@ body {
 }
 
 .icons {
-  @apply text-gray-700;
   @apply fill-current;
   @apply w-8;
   @apply h-8;
-  @apply transition-all;
-  @apply delay-300;
-  @apply ease-linear;
-
+  @apply transition-colors;
+  @apply ease-out;
+  @apply duration-300;
   &:hover {
     @apply text-black;
   }
+}
+
+.icons-big {
+  @apply text-black;
+  @apply fill-current;
+  @apply w-20;
+  @apply h-20;
+}
+
+.font-secondary {
+  font-family: "Lato", sans-serif;
 }
