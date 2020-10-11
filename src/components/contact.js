@@ -28,8 +28,8 @@ function Contact() {
   return (
     <section className="w-full py-24 md:flex md:items-center" id="contact" ref={sectionTrigger}>
       <div className="md:w-1/2 md:pr-10" >
-        <h3 className="text-3xl font-semibold tracking-widest mb-10">I'm currently available for part-time work.</h3>
-        <p className="font-secondary tracking-wider leading-normal">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <h3 className="text-3xl font-semibold tracking-widest mb-10">I Can Help</h3>
+        <p className="font-secondary tracking-wider leading-normal">I'm currently available for a part-time job position. Feel free to contact me</p>
         <a className="w-full mt-8 flex items-center justify-center" href="mailto:hajisky07@gmail.com">
           <Gmail className="icons mr-5" />
           <span className="text-xl">Hajisky07@gmail.com</span>

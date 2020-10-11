@@ -41,9 +41,9 @@ function Landing() {
   return (
     <div className="w-full">
       <div className="w-full py-48 md:py-24 md:flex md:items-center md:justify-between" ref={sectionTrigger}>
-        <div className="md:w-1/2">
+        <div>
           <h1 className="text-4xl lg:text-5xl font-bold tracking-wider">Hi, I'm Haji Mohammed</h1>
-          <p className="mt-10">Front End Developer, UI/UX Design</p>
+          <p>Front End Developer, UI/UX Design</p>
         </div>
         <div className="hidden md:block" style={{ width: 400, height: 500 }}>
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />

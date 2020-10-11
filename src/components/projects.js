@@ -65,8 +65,9 @@ const Projects = () => {
                 <h4 className="text-3xl hover:text-gray-700">Ontrac Xpress</h4>
               </a>
               <p className="font-secondary tracking-wider leading-normal my-5">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                Ontrac Xpress is Logistic business that facilitates package deliveries on a small scale. It is a sub-division of a company named Ontrac Global Resources Limited.
               </p>
+              <p className="font-secondary tracking-wider leading-normal my-5">Desinged on Adobe XD, Built with Next.js</p>
               <div className="w-1/2 flex justify-between items-center">
                 <Next className="icons text-black" />
                 <Sass className="icons text-black" />
@@ -89,7 +90,10 @@ const Projects = () => {
                 <h4 className="text-3xl hover:text-gray-700">Cooking With Khalil</h4>
               </a>
               <p className="font-secondary tracking-wider leading-normal my-5">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                So this project was just built on the fly for a friend. The dude did'nt even need it anymore but i just completed it anyway.
+              </p>
+              <p className="font-secondary tracking-wider leading-normal my-5">
+                Built with Gatsby, Hooked up to Netlify CMS
               </p>
               <div className="w-1/2 flex justify-between items-center">
                 <GatsbyLogo className="icons text-black" />
