@@ -17,7 +17,7 @@ function footer() {
 
         <div className="w-full lg:w-2/5 lg:mx-auto px-12 lg:px-32  flex justify-between ">
           <a href="https://www.instagram.com/hajisky/" target="_blank" rel="noreferrer"><Instagram className="text-gray-700 icons" /></a>
-          <a href="https://twitter.com/hajiskyy" target="_blank" rel="noreferrer"><Twitter className="text-gray-700 icons" /></a>
+          <a href="https://twitter.com/hajisky_" target="_blank" rel="noreferrer"><Twitter className="text-gray-700 icons" /></a>
           <a href="https://github.com/hajiskyy" target="_blank" rel="noreferrer"><Github className="text-gray-700 icons" /></a>
         </div>
 
