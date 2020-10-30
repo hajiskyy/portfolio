@@ -45,11 +45,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `image`,
-          content: `${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           property: `og:image`,
-          content: `${site.siteMetadata.image}`,
+          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           property: `og:url`,
