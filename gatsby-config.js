@@ -3,6 +3,9 @@ module.exports = {
     title: `Hajisky`,
     description: `Hi, I'm Haji. Welcome to my portfolio`,
     author: `@hajisky_`,
+    url: "https://www.hajisky.com", // No trailing slash allowed!
+    image: "/images/favicon.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@hajisky_",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,14 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hajisky`,
+        short_name: `Hajisky`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#FFFFFF`,
         display: `minimal-ui`,
-        icon: `src/images/signature.png`,
-        // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`
       },
     },
     `gatsby-plugin-postcss`,
