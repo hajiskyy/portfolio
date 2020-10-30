@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            image
+            defaultImage: image
             twitterUsername
             url
           }
@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const image = `${site.siteMetadata.url}${site.siteMetadata.defaultImage}`
 
   return (
     <Helmet
@@ -37,19 +37,11 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
-        },
-        {
-          name: `image`,
-          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
-        },
-        {
-          property: `og:image`,
-          content: `${site.siteMetadata.url}${site.siteMetadata.image}`,
         },
         {
           property: `og:url`,
@@ -83,7 +75,27 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          image
+            ? [
+              {
+                property: "og:image",
+                content: image,
+              },
+              {
+                name: "twitter:card",
+                content: "summary_large_image",
+              },
+            ]
+            : [
+              {
+                name: "twitter:card",
+                content: "summary",
+              },
+            ]
+        )
+        .concat(meta)}
     />
   )
 }
@@ -99,6 +111,11 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
 }
 
 export default SEO
