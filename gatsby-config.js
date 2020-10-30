@@ -3,7 +3,7 @@ module.exports = {
     title: `Hajisky`,
     description: `Hi, I'm Haji. Welcome to my portfolio`,
     author: `@hajisky_`,
-    url: "https://www.hajisky.com", // No trailing slash allowed!
+    url: "https://www.hajisky.netlify.app", // No trailing slash allowed!
     image: "/images/favicon.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@hajisky_",
   },
