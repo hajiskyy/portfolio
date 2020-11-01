@@ -34,7 +34,7 @@ function Landing() {
           <p>Developer, Data Science Student.</p>
         </div>
         <div className="hidden md:block" style={{ width: 400, height: 500 }}>
-          <Image src="/images/about.jpg" alt="Landing Image"
+          <Image src="/about.jpg" alt="Landing Image"
             unsized
           />
         </div>

@@ -33,7 +33,7 @@ function About() {
     <section className="w-full" id="about">
       <div className="w-full py-32 flex flex-col md:flex-row justify-center md:justify-between items-center">
         <div className="mb-20 md:mb-0" style={{ width: 300, height: 400 }}>
-          <Image src="/images/image.jpg"
+          <Image src="/image.jpg"
             alt="Picture of the author"
             unsized />
         </div>

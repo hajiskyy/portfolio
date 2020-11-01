@@ -39,7 +39,7 @@ const Projects = () => {
           <div className="w-full md:flex md:justify-between md:items-center mb-20">
             <div className="w-full md:w-1/2">
               <a href="https://ontracxpress.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
-                <Image src="/images/thumbnails-1.png"
+                <Image src="/thumbnails-1.png"
                   alt="Picture of the author"
                   unsized className=" border-gray-700 border-2 rounded-lg" />
               </a>
@@ -66,7 +66,7 @@ const Projects = () => {
           <div className="w-full md:flex md:justify-between md:items-center mb-20 md:mt-20">
             <div className="w-full md:w-1/2">
               <a href="https://cooking-with-khalil.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
-                <Image src="/images/thumbnails-2.png"
+                <Image src="/thumbnails-2.png"
                   alt="Picture of the author"
                   unsized className=" border-gray-700 border-2 rounded-lg" />
               </a>
