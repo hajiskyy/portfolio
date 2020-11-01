@@ -37,7 +37,7 @@ function Contact() {
       </div>
 
       <div className="md:w-1/2">
-        <form name="contact" method="POST" data-netlify="true" className="mt-10">
+        <form action="https://submit-form.com/Mh1VUiby" target="_self" className="mt-10">
           <input type="hidden" name="form-name" value="contact" />
           <div>
             <label htmlFor="name">
