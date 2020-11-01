@@ -9,11 +9,11 @@ function SEO({ description, title }) {
     <Head>
       <title>{`${title} | ${site.title}`}</title>
       <meta name="description" content={description} />
-      <link rel="shortcut icon" href={site.url + site.ico} />
-      <link rel="apple-touch-icon" sizes="180x180" href={site.url + site.appleTouchIcon} />
-      <link rel="icon" type="image/png" sizes="32x32" href={site.url + site.icon32} />
-      <link rel="icon" type="image/png" sizes="16x16" href={site.url + site.icon16} />
-      <link rel="manifest" href={site.url + site.manifest} />
+      <link rel="shortcut icon" href={site.ico} />
+      <link rel="apple-touch-icon" sizes="180x180" href={site.appleTouchIcon} />
+      <link rel="icon" type="image/png" sizes="32x32" href={site.icon32} />
+      <link rel="icon" type="image/png" sizes="16x16" href={site.icon16} />
+      <link rel="manifest" href={site.manifest} />
 
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
