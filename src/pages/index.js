@@ -7,10 +7,6 @@ import Stack from "../components/stack"
 import Projects from "../components/projects"
 import Contact from "../components/contact"
 
-import "../scss/index.scss"
-import "typeface-alata"
-import "typeface-lato"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

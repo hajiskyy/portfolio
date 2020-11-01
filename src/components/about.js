@@ -1,26 +1,13 @@
 import React, { useRef, useEffect } from 'react'
 import Chevrons from "../icons/chevrons-down.svg"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import Image from 'next/image'
 import Instagram from "../icons/instagram.svg";
 import Twitter from "../icons/twitter.svg";
 import Github from "../icons/github.svg";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 function About() {
-  const data = useStaticQuery(graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "image.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`)
-
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +33,9 @@ function About() {
     <section className="w-full" id="about">
       <div className="w-full py-32 flex flex-col md:flex-row justify-center md:justify-between items-center">
         <div className="mb-20 md:mb-0" style={{ width: 300, height: 400 }}>
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          <Image src="/images/image.jpg"
+            alt="Picture of the author"
+            unsized />
         </div>
         <div className="mt-10 md:mt-0 md:w-1/2" ref={sectionTrigger}>
           <h2 className="text-3xl font-semibold tracking-widest">About me</h2>

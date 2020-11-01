@@ -1,22 +1,10 @@
 import React, { useRef, useEffect } from 'react'
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from 'next/image'
 import Chevrons from "../icons/chevrons-down.svg";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 function Landing() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "about.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +34,9 @@ function Landing() {
           <p>Developer, Data Science Student.</p>
         </div>
         <div className="hidden md:block" style={{ width: 400, height: 500 }}>
-          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+          <Image src="/images/about.jpg" alt="Landing Image"
+            unsized
+          />
         </div>
 
       </div>

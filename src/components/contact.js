@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import Gmail from "../icons/gmail.svg";
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 function Contact() {
 

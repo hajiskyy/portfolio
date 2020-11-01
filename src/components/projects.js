@@ -1,34 +1,16 @@
 import React, { useRef, useEffect } from 'react'
 import Chevrons from "../icons/chevrons-down.svg"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from 'next/image'
 import Sass from "../icons/sass.svg"
 import GatsbyLogo from "../icons/gatsby.svg"
 import Tailwind from "../icons/tailwindcss.svg"
 import Netlify from "../icons/netlify.svg"
 import Next from "../icons/next-dot-js.svg"
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 const Projects = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      thumbnail1: file(relativePath: { eq: "thumbnails-1.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      thumbnail2: file(relativePath: { eq: "thumbnails-2.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+
   gsap.registerPlugin(ScrollTrigger);
 
   const sectionTrigger = useRef(null)
@@ -57,7 +39,9 @@ const Projects = () => {
           <div className="w-full md:flex md:justify-between md:items-center mb-20">
             <div className="w-full md:w-1/2">
               <a href="https://ontracxpress.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
-                <Img fluid={data.thumbnail1.childImageSharp.fluid} className=" border-gray-700 border-2 rounded-lg" />
+                <Image src="/images/thumbnails-1.png"
+                  alt="Picture of the author"
+                  unsized className=" border-gray-700 border-2 rounded-lg" />
               </a>
             </div>
             <div className="mt-10 md:w-1/2 md:mt-0 md:ml-10">
@@ -82,7 +66,9 @@ const Projects = () => {
           <div className="w-full md:flex md:justify-between md:items-center mb-20 md:mt-20">
             <div className="w-full md:w-1/2">
               <a href="https://cooking-with-khalil.netlify.app/" className="w-full" target="_blank" rel="noreferrer">
-                <Img fluid={data.thumbnail2.childImageSharp.fluid} className=" border-gray-700 border-2 rounded-lg" />
+                <Image src="/images/thumbnails-2.png"
+                  alt="Picture of the author"
+                  unsized className=" border-gray-700 border-2 rounded-lg" />
               </a>
             </div>
             <div className="mt-10 md:w-1/2 md:mt-0 md:ml-10">

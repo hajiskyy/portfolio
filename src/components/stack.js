@@ -11,7 +11,7 @@ import Mongodb from "../icons/mongodb.svg"
 import Firebase from "../icons/firebase.svg"
 import Codersrank from "../icons/codersrank.svg"
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 function Stack() {
   gsap.registerPlugin(ScrollTrigger);
