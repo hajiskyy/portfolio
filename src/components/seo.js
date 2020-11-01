@@ -9,7 +9,6 @@ function SEO({ description, title }) {
     <Head>
       <title>{`${title} | ${site.title}`}</title>
       <meta name="description" content={description} />
-
       <link rel="shortcut icon" href={site.url + site.ico} />
       <link rel="apple-touch-icon" sizes="180x180" href={site.url + site.appleTouchIcon} />
       <link rel="icon" type="image/png" sizes="32x32" href={site.url + site.icon32} />
