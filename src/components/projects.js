@@ -76,7 +76,7 @@ const Projects = () => {
                 <h4 className="text-3xl hover:text-gray-700">Ontrac Xpress</h4>
               </a>
               <p className="font-secondary tracking-wider leading-normal my-5">
-                This is one of my freelance projects done for a local logistics operating in my home country Nigeria. During this pandemic there has been a rise in logistic businesses in the country and they wanted some way to stand out from the rest. The design was made minimal and eye catching but also convenient.
+                This is one of my freelance projects done for a local logistics business. During this pandemic there has been a rise in logistic businesses across the country and they wanted some way to stand out from the rest. The design was made minimal and eye catching but also convenient.
               </p>
               <p className="font-secondary tracking-wider leading-normal my-5">Desinged on Adobe XD, Built with Next.js</p>
               <div className="w-1/2 flex justify-between items-center">
