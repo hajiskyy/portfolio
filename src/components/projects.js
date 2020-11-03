@@ -15,14 +15,14 @@ const Projects = () => {
     query {
       thumbnail1: file(relativePath: { eq: "thumbnails-1.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       thumbnail2: file(relativePath: { eq: "thumbnails-2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

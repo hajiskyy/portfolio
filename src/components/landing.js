@@ -10,7 +10,7 @@ function Landing() {
     query {
       placeholderImage: file(relativePath: { eq: "about.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
