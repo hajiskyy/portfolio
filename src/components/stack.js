@@ -78,7 +78,7 @@ function Stack() {
         </table>
         <div className="w-full mt-16">
           <div className="w-64 mx-auto px-3 py-5 border bg-black hover:bg-gray-700 text-white ">
-            <a href="https://profile.codersrank.io/user/hajiskyy" rel="noreferrer" target="_blank" className="flex items-center"> <span>Checkout my Codersrank</span>  <Codersrank className="icons text-white ml-3" /> </a>
+            <a href="https://profile.codersrank.io/user/hajiskyy" rel="noreferrer" target="_blank" className="flex items-center"> <span>Check out my Codersrank</span>  <Codersrank className="icons text-white ml-3" /> </a>
           </div>
         </div>
       </div>
