@@ -54,7 +54,7 @@ function About() {
           <p className="font-secondary tracking-wider leading-normal my-5">I'm currently available for part-time or contract work as I am currently pursuing a masters degree in Data Science at the university of Salford, Manchester.</p>
           <div className="flex items-center">
             <a href="https://docs.google.com/document/d/1Tm9KzdkYMhuUewEaQ3mG8onLiXkIWRfEQFzPCXRRaiE/edit?usp=sharing" target="_blank" rel="noreferrer" className="px-3 py-5 border bg-black hover:bg-gray-700 text-white" >View my CV Here</a>
-            <a href="https://twitter.com/hajisky_" target="_blank" rel="noreferrer" className="ml-5">
+            <a href="https://twitter.com/hajiskyy" target="_blank" rel="noreferrer" className="ml-5">
               <Twitter className="text-gray-700 icons" />
             </a>
             <a href="https://www.instagram.com/hajisky/" target="_blank" rel="noreferrer" className="ml-5">

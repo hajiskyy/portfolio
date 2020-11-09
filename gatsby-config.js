@@ -5,7 +5,7 @@ module.exports = {
     author: `@hajisky_`,
     url: "https://hajisky.com", // No trailing slash allowed!
     image: "/favicon.png", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@hajisky_",
+    twitterUsername: "@hajiskyy",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
